@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+   <title>Kanga-ye</title>
+</head>
+<body>
+   <nav class="navbar">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+          </svg>
+        </a>
+      </span>
+  
+      <ul class="navbar-nav">
+        <li><a href="#tete">Accueil</a></li>
+        <li><a href="#qui">A propos</a></li>
+        <li><a href="#">Telecharger</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#tete">Accueil</a>
+      <a href="#qui">A propos</a>
+      <a href="#comment">Comment sa marche?</a>
+      <a href="#">Contact</a>
+    </div>
+    <script>
+      function openSlideMenu(){
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+      }
+      function closeSlideMenu(){
+        document.getElementById('side-menu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+      }
+   </script>
+   <main>
+      <header class="main-content">
+         <div class="main-content-flex">
+            <div class="class-main-content-text">
+               <h1></h1>
+               <h2></h2>
+            </div>
+         </div>
+         <div class="class-main-content-img"></div>
+      </header>
+        <div class="img" id="tete">
+           <img src="public/img/bg1.jpg" alt="bg1">
+        </div>
+   </main>
+   <div class="main-text-img" id="qui">
+      <h2>Qui sommes nous ?</h2>
+ </div>
+ <div class="main1-text-img">
+    <p>Nous sommes une plateforme d'entraide communautaire au
+      Service de la sécurité collective de tous.
+      Elle permet à ses utilisateurs, lorsqu'ils se trouvent en
+       situation d'urgence, d’alerter et d'informer en un 
+       clic les autres membres du réseau a proximité ainsi que la
+    police pour que celle-ci viennent apporter de l'aide.</p>
+
+
+
+
+    <hr>
+ </div>
+ 
+</div>
+
+   <footer>
+      <h3>Nous contacter</h3>
+      <hr>
+      <p>Envoyer un e-mail ou applez-nous :</p>
+      <p>E-mail :<span class="footer-text">Kangaye243@gmail.com</span> / Telephone :<span class="footer-text">(+243)97.22.36.317</span></p>
+      <p>&copy; Kanga-ye 2020. tous droits reserves.</p>
+   </footer>
+
+   <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+   <script src="js/app.js"></script>
+ </body>
+ </html>
